@@ -26,10 +26,8 @@
             Client = client;
         }
 
-        public void DisplayTotalCaloriesAndPrice()
+        public void DisplayTotalPrice()
         {
-            int totalCalories = Dishes.Sum(dish => dish.Calories);
-            Console.WriteLine($"Загальна калорійність: {totalCalories}");
             Console.WriteLine($"Загальна ціна: {TotalAmount}");
         }
 
@@ -54,7 +52,7 @@
             Console.WriteLine($"Контактний номер: {Client.ContactNumber}");
             Console.WriteLine($"Ресторан: {Restaurant.Name}");
             Console.WriteLine($"Статус замовлення: {Status}");
-            DisplayTotalCaloriesAndPrice();
+            DisplayTotalPrice();
         }
     }
 }

@@ -87,7 +87,7 @@ public class DeliveryManager
         Console.WriteLine("Виберіть страву:");
         for (int i = 0; i < Menu.Count; i++)
         {
-            Console.WriteLine($"{i + 1}. {Menu[i].Name}, Опис: {Menu[i].Description}, Ціна: {Menu[i].Price}, Калорії: {Menu[i].Calories}");
+            Console.WriteLine($"{i + 1}. {Menu[i].Name}, Ціна: {Menu[i].Price}");
         }
 
         int chosenNumber = Int32.Parse(Console.ReadLine());

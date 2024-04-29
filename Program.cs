@@ -9,6 +9,7 @@ internal class Program
 
         Console.Write("Виберіть режим: (1 -- Стандартний ввід/вивід) (2 -- Мок-тестери): ");
         string mode = Console.ReadLine();
+        Console.Clear();
 
         Client client;
         DeliveryManager deliveryManager;
